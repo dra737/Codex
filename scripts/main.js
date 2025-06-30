@@ -18,3 +18,19 @@ programButtons.forEach(btn => {
     }
   });
 });
+
+// Scroll to top functionality
+const topBtn = document.getElementById('topBtn');
+if (topBtn) {
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+      topBtn.classList.remove('hidden');
+    } else {
+      topBtn.classList.add('hidden');
+    }
+  });
+
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
