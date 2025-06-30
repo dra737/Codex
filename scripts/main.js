@@ -1,0 +1,20 @@
+// Toggle extra introduction text
+const moreBtn = document.getElementById('moreBtn');
+const moreText = document.getElementById('moreText');
+
+if (moreBtn && moreText) {
+  moreBtn.addEventListener('click', () => {
+    moreText.classList.toggle('hidden');
+  });
+}
+
+// Toggle program information
+const programButtons = document.querySelectorAll('.program-btn');
+programButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const info = btn.nextElementSibling;
+    if (info) {
+      info.classList.toggle('hidden');
+    }
+  });
+});

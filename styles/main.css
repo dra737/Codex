@@ -35,3 +35,32 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #005b9a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d66;
+}
+
+.programs {
+    list-style: none;
+    padding: 0;
+}
+
+.programs li {
+    margin-bottom: 1rem;
+}
+
+.program-info {
+    margin-top: 0.5rem;
+}
